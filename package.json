@@ -1,0 +1,21 @@
+{
+  "name": "testes-fluke",
+  "version": "1.0.0",
+  "description": "Teste processo seletivo Fluke",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "Filipe Pinheiro Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
