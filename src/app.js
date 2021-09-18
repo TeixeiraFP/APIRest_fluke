@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 
 require("./controllers/authController")(app);
 require("./controllers/packageController")(app);
+require("./controllers/portabilityController")(app);
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);

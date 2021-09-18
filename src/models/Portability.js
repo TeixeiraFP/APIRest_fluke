@@ -16,7 +16,7 @@ const PortabilitySchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  assignedTo: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
     required: true,
@@ -27,12 +27,12 @@ const PortabilitySchema = new mongoose.Schema({
   },
 });
 
-PortabilitySchema.pre("save", async function (next) {
-  const hash = await bcrypt.hash(this.cpf, 10);
-  this.cpf = hash;
+// PortabilitySchema.pre("save", async function (next) {
+//   const hash = await bcrypt.hash(this.cpf, 15);
+//   this.cpf = hash;
 
-  next();
-});
+//   next();
+// });
 
 const Portability = mongoose.model("Portability", PortabilitySchema);
 
