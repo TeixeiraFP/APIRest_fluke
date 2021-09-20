@@ -1,16 +1,16 @@
 const mongoose = require("../database/db");
 
 const ProductSchema = new mongoose.Schema({
-  giga: {
-    type: Number,
+  gigas: {
+    type: String,
     required: true,
   },
   minutes: {
-    type: Number,
+    type: String,
     required: true,
   },
-  posts: {
-    type: Number,
+  sms: {
+    type: String,
     required: true,
   },
   user: {

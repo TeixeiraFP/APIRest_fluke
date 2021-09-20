@@ -6,9 +6,9 @@ const TicketSchema = new mongoose.Schema({
     required: true,
   },
   status: {
-    type: Boolean,
+    type: String,
     required: true,
-    default: false,
+    default: "processing",
   },
   portability: {
     type: mongoose.Schema.Types.ObjectId,

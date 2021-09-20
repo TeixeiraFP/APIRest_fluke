@@ -32,6 +32,8 @@ router.post("/portabilityRequest", async (req, res) => {
 
     await portability.save();
 
+    portability.cpf = undefined;
+
     return res.send({ portability });
   } catch (err) {
     console.log(err);

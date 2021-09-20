@@ -7,7 +7,7 @@ const PortabilitySchema = new mongoose.Schema({
     required: true,
   },
   cpf: {
-    type: Number,
+    type: String,
     required: true,
     select: false,
   },
@@ -28,12 +28,12 @@ const PortabilitySchema = new mongoose.Schema({
   },
 });
 
-// PortabilitySchema.pre("save", async function (next) {
-//   const hash = await bcrypt.hash(this.cpf, 15);
-//   this.cpf = hash;
+PortabilitySchema.pre("save", async function (next) {
+  const hash = await bcrypt.hash(this.cpf, 15);
+  this.cpf = hash;
 
-//   next();
-// });
+  next();
+});
 
 const Portability = mongoose.model("Portability", PortabilitySchema);
 
