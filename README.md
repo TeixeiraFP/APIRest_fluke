@@ -5,7 +5,6 @@
 1. Git
 2. Node.js
 3. Mongoose (NoSQL)
-4.
 
 #### Após fazer o download e a instalação dos programas, siga os passos abaixo:
 
@@ -18,13 +17,13 @@
    **_no arquivo package.json você tem acesso a qual são essas dependência._**
 
 3. Para utilização do mongoose, você deve ter instalado o mongoDB, faça o download no link abaixo:<br>
-   `https://www.mongodb.com/try/download/community`
+   `https://www.mongodb.com/try/download/community` <br>
    **_Depois de instalar, abra o cmd e rode o servidor mongo com o comando:_** ` mongod`
 
 4. Por fim Com todas dependências instaladas e o servidor mongo rodando, execute o comando: <br>
    `npm run dev`
 
-5. As rota para acessar a entidade Funcionario são:
+5. As rota para acessar a entidade Funcionario são:<br>
    POST: `"/auth/registerNewCustomer"` <br>
    POST: `"/auth/authentication"` <br><br>
 
