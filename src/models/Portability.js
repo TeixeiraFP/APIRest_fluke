@@ -8,19 +8,20 @@ const PortabilitySchema = new mongoose.Schema({
   },
   cpf: {
     type: Number,
-    unique: true,
     required: true,
     select: false,
-  },
-  phone: {
-    type: Number,
-    required: true,
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
     required: true,
   },
+  ticket: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Ticket",
+    },
+  ],
   createdAt: {
     type: Date,
     default: Date.now,
