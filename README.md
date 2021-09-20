@@ -33,14 +33,39 @@
    `"password": "1234567"` <br>
    ` }` <br>
 
-   POST: `"/auth/authentication"` <br><br>
+   POST: `"/auth/authentication"` <br>
+   `{` <br>
+   `"email": "Mandela@outlook.com.br",` <br>
+   `"password": "1234567"` <br>
+   ` }` <br><br>
 
    POST: `"/products/productsOrder"` <br>
-   GET: ` "/products/currentePackage/:productId"` <br><br>
+   `{ `<br>
+   `"gigas": "8 gigas", `<br>
+   `"minutes": "200 minutes", `<br>
+   `"sms": "100 posts" `<br>
+   `}` <br>
+   GET: ` "/products/currentePackage/:productId"` <br>
+   **_copiar e passar o id do produto na rota_** <br><br>
 
    POST: `"/portability/portabilityRequest"` <br>
+   `{ ` <br>
+   `"name": "Paloma Pinheiro",` <br>
+   `"cpf":"12558745603", ` <br>
+   `"ticket": [ ` <br>
+   `{` <br>
+   `"phone": "981253377",` <br>
+   `"assignedTo": "6147bb53ab623df975c2d7b8"` <br>
+   `},` <br>
+   `{` <br>
+   `"phone": "981663378",` <br>
+   `"assignedTo": "6147bb53ab623df975c2d7b8"` <br>
+   `}]}` <br>
+
    GET: `"/portability/portabilities/:portabilityId` <br>
+   **_copiar e passar o id do produto na rota_** <br><br>
 
 ### Sobre
 
-Projeto foi feito utilizando **Node.js**, **Express** e **Mongoose**. Na organização do código utilizeia arquitetura MVC, separando em **Models** e **Controllers** com a possibilidade de posteriormente desenvolver a **View**.
+Projeto foi feito utilizando **Node.js**, **Express** e **Mongoose**. Na organização do código utilizeia arquitetura MVC, separando em **Models** e **Controllers** com a possibilidade de posteriormente desenvolver a **View**.<br>
+A partir da autenticação um tokem é gerado, esse tokem deve ser copiado e passo no header da requisição.
