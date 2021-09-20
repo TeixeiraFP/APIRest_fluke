@@ -27,11 +27,11 @@
    **_OBS:_** As infos devem ser passadas em formato JSON no body.<br>
 
    POST: `"/auth/registerNewCustomer"` <br>
-   `{`
-   `"name": "Nelson Mandela",`
-   `"email": "Mandela@outlook.com.br",`
-   `"password": "1234567"`
-   ` }`
+   `{` <br>
+   `"name": "Nelson Mandela",` <br>
+   `"email": "Mandela@outlook.com.br",` <br>
+   `"password": "1234567"` <br>
+   ` }` <br>
 
    POST: `"/auth/authentication"` <br><br>
 
