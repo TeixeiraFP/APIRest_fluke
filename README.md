@@ -5,6 +5,7 @@
 1. Git
 2. Node.js
 3. Mongoose (NoSQL)
+4. Insomnia
 
 #### Após fazer o download e a instalação dos programas, siga os passos abaixo:
 
@@ -65,7 +66,7 @@
 
 ### Sobre
 
-Projeto foi feito utilizando **Node.js**, **Express** e **Mongoose**. Na organização do código utilizeia arquitetura MVC, separando em **Models** e **Controllers** com a possibilidade de posteriormente desenvolver a **View**.<br>
-A partir da autenticação um tokem é gerado, esse tokem deve ser copiado e passo no header da requisição.<br>
+Projeto foi feito utilizando **Node.js**, **Express**, **Mongoose** e **JWT** para as autenticações. Na organização do código utilizeia arquitetura MVC, separando em **Models** e **Controllers** com a possibilidade de posteriormente desenvolver a **View**.<br>
+A partir da autenticação um tokem é gerado, esse tokem deve ser copiado e passado no header da requisição. As requisições podem ser feitas localmente pelo insomnia.<br>
 
 **_Link deploy no heroku:_** <a href="https://pacific-falls-95780.herokuapp.com/"> https://pacific-falls-95780.herokuapp.com/ </a>
