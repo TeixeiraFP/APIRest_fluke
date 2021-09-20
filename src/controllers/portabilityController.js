@@ -6,6 +6,7 @@ const router = express.Router();
 const Portability = require("../models/Portability");
 const Ticket = require("../models/Ticket");
 
+//autenticacao das rotas
 router.use(MiddlewareAuth);
 
 router.post("/portabilityRequest", async (req, res) => {
@@ -41,6 +42,7 @@ router.post("/portabilityRequest", async (req, res) => {
   }
 });
 
+//atualizando sempre o ticket, sempre que fizermos a pesquisa nos retorna todos os ticket aberto de uma pessoa
 router.get("/portabilities/:portabilityId", async (req, res) => {
   try {
     const portabilities = await Portability.findById(
@@ -53,5 +55,8 @@ router.get("/portabilities/:portabilityId", async (req, res) => {
     res.status(400).send({ error: "error loading your portabilities" });
   }
 });
+
+//Com uma rota de atualização, consguimos fazer uma validacao pelo cpf e fazer com que o id do cliente seja o mesmo
+//mudando apenas os tickets de de portabilidade
 
 module.exports = (app) => app.use("/portability", router);

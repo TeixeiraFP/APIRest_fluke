@@ -13,6 +13,9 @@ function tokenGeneration(params = {}) {
   }));
 }
 
+//O token de validacao é gerado já  no registro, pois em muitos sites a partir
+// do registro o cliente já pode consumir as funcionalidades da página.
+
 router.post("/registerNewCustomer", async (req, res) => {
   const { email } = req.body;
   try {

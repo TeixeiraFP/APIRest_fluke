@@ -4,7 +4,11 @@ const router = express.Router();
 
 const Product = require("../models/Product");
 
+//autenticacao das rotas
 router.use(MiddlewareAuth);
+
+// pensando em escalabilidade da aplicação, podemos criar ticketes também para compra de produtos,
+//assim, atualizariámos sempre os tickes.
 
 router.get("/currentePackage/:productId", async (req, res) => {
   try {

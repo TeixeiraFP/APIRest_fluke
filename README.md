@@ -23,8 +23,16 @@
 4. Por fim Com todas dependências instaladas e o servidor mongo rodando, execute o comando: <br>
    `npm run dev`
 
-5. As rota para acessar a entidade Funcionario são:<br>
+5. As rota são:<br>
+   **_OBS:_** As infos devem ser passadas em formato JSON no body.<br>
+
    POST: `"/auth/registerNewCustomer"` <br>
+   `{`
+   `"name": "Nelson Mandela",`
+   `"email": "Mandela@outlook.com.br",`
+   `"password": "1234567"`
+   ` }`
+
    POST: `"/auth/authentication"` <br><br>
 
    POST: `"/products/productsOrder"` <br>
