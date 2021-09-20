@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 //config mongoose
 
-const url = "mongodb://localhost/flukedb";
+const url = "mongodb://localhost/flukeDb";
 
 mongoose.Promise = global.Promise;
 
